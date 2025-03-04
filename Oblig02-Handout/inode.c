@@ -12,17 +12,23 @@ struct inode* create_file( struct inode* parent, const char* name, char readonly
     return NULL;
 }
 
+
+
 struct inode* create_dir( struct inode* parent, const char* name )
 {
     fprintf( stderr, "%s is not implemented\n", __FUNCTION__ );
     return NULL;
 }
 
+
+
 struct inode* find_inode_by_name( struct inode* parent, const char* name )
 {
     fprintf( stderr, "%s is not implemented\n", __FUNCTION__ );
     return NULL;
 }
+
+
 
 int delete_file( struct inode* parent, struct inode* node )
 {
@@ -42,11 +48,18 @@ void save_inodes( const char* master_file_table, struct inode* root )
     return;
 }
 
-struct inode* load_inodes( const char* master_file_table )
-{
+
+
+
+
+struct inode* load_inodes(const char* master_file_table) {
     fprintf( stderr, "%s is not implemented\n", __FUNCTION__ );
     return NULL;
 }
+
+
+
+
 
 void fs_shutdown( struct inode* inode )
 {
